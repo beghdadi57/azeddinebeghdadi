@@ -13,7 +13,8 @@ Research interests:
 
 ## Links
 
-- [Personal academic website](https://beghdadi57.github.io/)
+- [Personal github website](https://beghdadi57.github.io/)
+- [Personal academic website](https://beghdadi57.github.io/azeddinebeghdadi/)
 - [Google Scholar](https://scholar.google.com/citations?user=D5CISpEAAAAJ)
 - [ORCID](https://orcid.org/0000-0002-5595-0615)
 - [LinkedIn](https://www.linkedin.com/in/azeddine-beghdadi-8616ba20/)
