@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prof. Azeddine Beghdadi — Academic Profile</title>
+
+    <meta
+        name="description"
+        content="Academic profile of Prof. Azeddine Beghdadi — Visual Computing, Signal Processing, Image Quality Assessment and Computer Vision."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    
+    <link rel="canonical"
+          href="https://beghdadi57.github.io/website/">
+
+    <style>
+
+        /* ============================================================
+           VARIABLES
+        ============================================================ */
+
+        :root {
+            --bg: #ffffff;
+            --bg-soft: #f7f8fb;
+            --card: #ffffff;
+
+            --text: #17181c;
+            --muted: #686d78;
+
+            --accent: #3956d8;
+            --accent-light: #eef1ff;
+
+            --border: #e6e8ed;
+
+            --shadow:
+                0 15px 40px rgba(20, 25, 40, 0.08);
+
+            --max-width: 1180px;
+        }
+
+        body.dark {
+            --bg: #101216;
+            --bg-soft: #171a20;
+            --card: #191c22;
+
+            --text: #f4f4f5;
+            --muted: #a9aeb9;
+
+            --accent: #91a5ff;
+            --accent-light: #222a48;
+
+            --border: #2b3039;
+
+            --shadow:
+                0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+
+        /* ============================================================
+           RESET
+        ============================================================ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: var(--bg);
+            color: var(--text);
+
+            line-height: 1.65;
+
+            transition:
+                background-color .3s ease,
+                color .3s ease;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(92%, var(--max-width));
+            margin: auto;
+        }
+
+
+        /* ============================================================
+           NAVIGATION
+        ============================================================ */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: color-mix(
+                in srgb,
+                var(--bg) 90%,
+                transparent
+            );
+
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+
+            color: var(--muted);
+            font-size: .92rem;
+        }
+
+        .nav-links a {
+            transition: .2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .theme-button {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            border: 1px solid var(--border);
+
+            background: var(--bg-soft);
+            color: var(--text);
+
+            cursor: pointer;
+
+            transition: .2s ease;
+        }
+
+        .theme-button:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* ============================================================
+           HERO
+        ============================================================ */
+
+        .hero {
+            padding: 110px 0 70px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.45fr .55fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+
+            font-size: .78rem;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: .15em;
+
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            margin: 0 0 25px;
+
+            font-size: clamp(3.5rem, 8vw, 6.8rem);
+            line-height: .9;
+
+            letter-spacing: -.065em;
+        }
+
+        .hero-title {
+            font-size: 1.45rem;
+            font-weight: 600;
+
+            margin-bottom: 8px;
+        }
+
+        .hero-affiliation {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .hero-topics {
+            margin: 23px 0 30px;
+
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 11px 20px;
+
+            border: 1px solid var(--border);
+            border-radius: 9px;
+
+            font-weight: 650;
+            font-size: .92rem;
+
+            transition: .2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .button.primary {
+            background: var(--accent);
+            border-color: var(--accent);
+
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 22px;
+
+            color: var(--muted);
+
+            font-size: .9rem;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+
+        /* ============================================================
+           AVATAR
+        ============================================================ */
+
+        .avatar-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .avatar {
+            width: 250px;
+            height: 250px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--accent-light),
+                    var(--bg-soft)
+                );
+
+            border: 1px solid var(--border);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+
+            color: var(--accent);
+
+            font-size: 4rem;
+            font-weight: 800;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        /* ============================================================
+           STATS
+        ============================================================ */
+
+        .stats {
+            padding: 40px 0 80px;
+        }
+
+        .stats-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat {
+            padding: 32px 20px;
+
+            text-align: center;
+        }
+
+        .stat:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
+
+        .stat-value {
+            font-size: 2.3rem;
+            font-weight: 800;
+
+            letter-spacing: -.05em;
+        }
+
+        .stat-lel {
+            color: var(--muted);
+            font-size: .86rem;
+
+            margin-top: 4px;
+        }
+
+
+        /* ============================================================
+           GENERIC SECTIONS
+        ============================================================ */
+
+        section.content-section {
+            padding: 100px 0;
+
+            border-top: 1px solid var(--border);
+        }
+
+        section.soft {
+            background: var(--bg-soft);
+        }
+
+        .section-lel {
+            color: var(--accent);
+
+            font-size: .76rem;
+            font-weight: 800;
+
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 12px 0 30px;
+
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+
+            line-height: 1.04;
+
+            letter-spacing: -.05em;
+        }
+
+        h3 {
+            line-height: 1.3;
+        }
+
+        .lead {
+            max-width: 800px;
+
+            color: var(--muted);
+            font-size: 1.06rem;
+        }
+
+
+        /* ============================================================
+           BIOGRAPHY
+        ============================================================ */
+
+        .bio-grid {
+            display: grid;
+
+            grid-template-columns: .85fr 1.4fr;
+
+            gap: 85px;
+        }
+
+        .address {
+            color: var(--muted);
+        }
+
+        .bio-text {
+            color: var(--muted);
+
+            font-size: 1.03rem;
+        }
+
+        .bio-text p:first-child {
+            margin-top: 0;
+        }
+
+
+        /* ============================================================
+           CARDS
+        ============================================================ */
+
+        .cards {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+
+            margin-top: 45px;
+        }
+
+        .card {
+            padding: 28px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 14px;
+
+            transition: .25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+
+            border-color: var(--accent);
+
+            box-shadow: var(--shadow);
+        }
+
+        .card-icon {
+            width: 42px;
+            height: 42px;
+
+            margin-bottom: 22px;
+
+            border-radius: 50%;
+
+            background: var(--accent-light);
+            color: var(--accent);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1.3rem;
+        }
+
+        .card h3 {
+            margin: 0 0 12px;
+
+            font-size: 1.12rem;
+        }
+
+        .card p {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: .93rem;
+        }
+
+
+        /* ============================================================
+           PUBLICATIONS
+        ============================================================ */
+
+        .publication-list {
+            margin-top: 35px;
+        }
+
+        .publication {
+            display: grid;
+
+            grid-template-columns: 90px 1fr;
+
+            gap: 25px;
+
+            padding: 27px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .publication-year {
+            color: var(--accent);
+
+            font-weight: 750;
+        }
+
+        .publication-title {
+            font-weight: 700;
+
+            font-size: 1.03rem;
+        }
+
+        .publication-authors,
+        .publication-venue {
+            color: var(--muted);
+
+            font-size: .9rem;
+
+            margin-top: 4px;
+        }
+
+        .publication-venue {
+            font-style: italic;
+        }
+
+
+        /* ============================================================
+           DATASETS
+        ============================================================ */
+
+        .dataset-year {
+            color: var(--accent);
+
+            font-size: .8rem;
+            font-weight: 800;
+
+            margin-bottom: 8px;
+        }
+
+        .dataset-acronym {
+            font-size: 1.4rem;
+            font-weight: 800;
+
+            margin-bottom: 4px;
+        }
+
+        .dataset-name {
+            font-size: .9rem;
+
+            color: var(--muted);
+
+            margin-bottom: 16px;
+        }
+
+        .dataset-link {
+            display: inline-block;
+
+            color: var(--accent);
+
+            margin-top: 18px;
+
+            font-weight: 650;
+            font-size: .9rem;
+        }
+
+
+        /* ============================================================
+           NEWS
+        ============================================================ */
+
+        .news-list {
+            margin-top: 40px;
+        }
+
+        .news {
+            display: grid;
+
+            grid-template-columns: 130px 1fr;
+
+            gap: 25px;
+
+            padding: 28px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .news-date {
+            color: var(--accent);
+
+            font-weight: 750;
+        }
+
+        .news h3 {
+            margin: 0 0 7px;
+
+            font-size: 1.05rem;
+        }
+
+        .news p {
+            margin: 0;
+
+            color: var(--muted);
+        }
+
+
+        /* ============================================================
+           SERVICE
+        ============================================================ */
+
+        .service-list {
+            margin-top: 35px;
+
+            padding: 0;
+
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 15px 0;
+
+            border-bottom: 1px solid var(--border);
+
+            color: var(--muted);
+        }
+
+        .service-list strong {
+            color: var(--text);
+        }
+
+
+        /* ============================================================
+           CONTACT
+        ============================================================ */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+
+            margin-top: 45px;
+        }
+
+        .contact-item {
+            padding-top: 20px;
+
+            border-top: 2px solid var(--accent);
+        }
+
+        .contact-lel {
+            color: var(--muted);
+
+            text-transform: uppercase;
+
+            font-size: .72rem;
+            font-weight: 750;
+
+            letter-spacing: .1em;
+
+            margin-bottom: 7px;
+        }
+
+        .contact-value {
+            font-size: .95rem;
+        }
+
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+
+        footer {
+            padding: 45px 0;
+
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-start;
+
+            gap: 30px;
+
+            color: var(--muted);
+
+            font-size: .87rem;
+        }
+
+        .footer-name {
+            color: var(--text);
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* ============================================================
+           MOBILE
+        ============================================================ */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .avatar-wrapper {
+                justify-content: flex-start;
+            }
+
+            .stats-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .stat:nth-child(-n+2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding-top: 70px;
+            }
+
+            h1 {
+                font-size: 3.6rem;
+            }
+
+            .avatar {
+                width: 190px;
+                height: 190px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .publication,
+            .news {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!-- ================================================================
+     HEADER
+================================================================ -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a class="logo" href="#top">
+                A.Beghdadi
+            </a>
+
+
+            <div class="nav-right">
+
+                <div class="nav-links">
+
+                    <a href="#about">About</a>
+
+                    <a href="#research">
+                        Research
+                    </a>
+
+                    <a href="#publications">
+                        Publications
+                    </a>
+
+                    <a href="#datasets">
+                        Datasets
+                    </a>
+
+                    <a href="#news">
+                        News
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <button
+                    id="themeButton"
+                    class="theme-button"
+                    aria-label="Toggle dark mode"
+                >
+                    ☾
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================================================================
+     HERO
+================================================================ -->
+
+<main id="top">
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+
+            <div>
+
+                <div class="eyebrow">
+                    Prof. Dr.
+                </div>
+
+
+                <h1>
+                    Azeddine<br>
+                    Beghdadi
+                </h1>
+
+
+                <div class="hero-title">
+
+                    Professor of Visual Computing
+                    &amp; Signal Processing
+
+                </div>
+
+
+                <div class="hero-affiliation">
+
+                    University Sorbonne Paris Nord —
+                    L2TI Laboratory, Institut Galilée
+
+                </div>
+
+
+                <div class="hero-topics">
+
+                    Bio-inspired vision ·
+                    Image &amp; Video Quality ·
+                    Physics-based Visual Computing
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="#contact"
+                        class="button primary"
+                    >
+                        Get in touch
+                    </a>
+
+                    <a
+                        href="#publications"
+                        class="button"
+                    >
+                        Publications
+                    </a>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a
+                        href="https://www-l2ti.univ-paris13.fr/~beghdadi/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        🌐 Homepage
+                    </a>
+
+
+                    <!-- Replace with the exact Google Scholar URL if desired -->
+                    <a
+                        href="https://scholar.google.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ◉ Scholar
+                    </a>
+
+
+                    <a
+                        href="https://ieeexplore.ieee.org/author/37271561200"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ◆ IEEE
+                    </a>
+
+
+                    <a
+                        href="https://orcid.org/0000-0002-5595-0615"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ○ ORCID
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="avatar-wrapper">
+
+                <!--
+                    Place a photo in:
+
+                    assets/profile.jpg
+
+                    Then replace the AB block below by:
+
+                    <div class="avatar">
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Portrait of Prof. Azeddine Beghdadi"
+                        >
+                    </div>
+                -->
+
+                <div class="avatar">
+                        <img
+                            src="./assets/profile.jpg"
+                            alt="Azeddine Beghdadi"
+                        >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     STATISTICS
+================================================================ -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+
+            <div class="stat">
+
+                <div class="stat-value">
+                    350+
+                </div>
+
+                <div class="stat-label">
+                    Peer-reviewed papers
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-value">
+                    35+
+                </div>
+
+                <div class="stat-label">
+                    PhDs supervised
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-value">
+                    30+
+                </div>
+
+                <div class="stat-label">
+                    Invited &amp; plenary talks
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-value">
+                    6
+                </div>
+
+                <div class="stat-label">
+                    Best paper awards
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     BIOGRAPHY
+================================================================ -->
+
+<section
+    id="about"
+    class="content-section soft"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            Biography
+        </div>
+
+
+        <div class="bio-grid">
+
+
+            <div>
+
+                <h2>
+                    Professor of<br>
+                    Visual Computing
+                </h2>
+
+
+                <div class="address">
+
+                    L2TI Laboratory<br>
+                    Institut Galilée<br>
+                    Sorbonne Paris Nord<br><br>
+
+                    99 avenue J.-B. Clément<br>
+                    93430 Villetaneuse<br>
+                    France
+
+                </div>
+
+            </div>
+
+
+            <div class="bio-text">
+
+                <p>
+                    Azeddine Beghdadi is Professor of Visual
+                    Computing and Signal Processing at
+                    Université Sorbonne Paris Nord, where he
+                    has held a professorship since 2000.
+                    He was promoted to Exceptional Class
+                    Professor in 2016.
+                </p>
+
+                <p>
+                    He is a founding member of the Laboratory
+                    of Information Processing and Transmission
+                    (L2TI) and served as its director between
+                    2010 and 2016. He also founded the European
+                    Workshop on Visual Information Processing
+                    (EUVIP) and chairs its steering committee.
+                </p>
+
+                <p>
+                    His academic background includes graduate
+                    studies in optics and signal processing,
+                    followed by a PhD in the same field.
+                    His research has progressively connected
+                    computational visual perception,
+                    bio-inspired modelling, physics-based
+                    image analysis and modern machine-learning
+                    approaches.
+                </p>
+
+                <p>
+                    His scientific activity covers visual
+                    quality assessment, restoration and
+                    enhancement, scene understanding,
+                    medical imaging and robust computer vision.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     RESEARCH
+================================================================ -->
+
+<section
+    id="research"
+    class="content-section"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            Research Interests
+        </div>
+
+
+        <h2>
+            Areas of Expertise
+        </h2>
+
+
+        <p class="lead">
+
+            Research activities cover perceptual models,
+            quality assessment, physics-guided image analysis
+            and learning-based methods for robust visual
+            understanding.
+
+        </p>
+
+
+        <div class="cards">
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◐
+                </div>
+
+                <h3>
+                    Image &amp; Video Quality Assessment
+                </h3>
+
+                <p>
+                    Development of full-reference and
+                    no-reference perceptual quality measures
+                    for natural images, medical imagery,
+                    surveillance video and document content,
+                    together with dedicated benchmark datasets.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◑
+                </div>
+
+                <h3>
+                    Bio-inspired Vision Models
+                </h3>
+
+                <p>
+                    Computational modelling inspired by
+                    retino-cortical mechanisms such as
+                    adaptation, contrast perception,
+                    inhibition and visual attention, including
+                    their integration into modern vision
+                    architectures.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◒
+                </div>
+
+                <h3>
+                    Physics-based Image Analysis
+                </h3>
+
+                <p>
+                    Analysis and restoration of visual
+                    information acquired in difficult
+                    conditions such as haze, rain, blur or
+                    low illumination using physical models
+                    and learned inverse methods.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◓
+                </div>
+
+                <h3>
+                    Medical &amp; Laparoscopic Imaging
+                </h3>
+
+                <p>
+                    Image enhancement and perceptual quality
+                    analysis for laparoscopic and capsule
+                    endoscopy imagery, with applications
+                    developed in collaboration with medical
+                    and clinical partners.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◕
+                </div>
+
+                <h3>
+                    Robust Computer Vision
+                </h3>
+
+                <p>
+                    Object recognition and detection under
+                    realistic acquisition degradations and
+                    scene-dependent distortions, including
+                    benchmarking through datasets such as
+                    CD-COCO and VSQuAD.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ◖
+                </div>
+
+                <h3>
+                    Self-Supervised Representation Learning
+                </h3>
+
+                <p>
+                    Learning representations through
+                    domain-informed objectives and consistency
+                    constraints for visual signals and
+                    time-series data.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     PUBLICATIONS
+================================================================ -->
+
+<section
+    id="publications"
+    class="content-section soft"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            Selected Publications
+        </div>
+
+
+        <h2>
+            Recent Work
+        </h2>
+
+
+        <p class="lead">
+
+            Selected contributions from a scientific record
+            comprising more than 350 peer-reviewed journal
+            and conference publications and multiple
+            best-paper distinctions.
+
+        </p>
+
+
+        <div class="publication-list">
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2023
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        CD-COCO: A Versatile Complex Distorted
+                        COCO Database for Scene-Context-Aware
+                        Computer Vision
+                    </div>
+
+                    <div class="publication-authors">
+                        A. Beghdadi, A. Beghdadi,
+                        M. Mallem, L. Beji,
+                        F. Alaya Cheikh
+                    </div>
+
+                    <div class="publication-venue">
+                        EUVIP 2023
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2022
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        Blind quality-based pairwise ranking
+                        of contrast changed color images
+                        using deep networks
+                    </div>
+
+                    <div class="publication-authors">
+                        A. Chetouani, M. A. Qureshi,
+                        M. Deriche, A. Beghdadi
+                    </div>
+
+                    <div class="publication-venue">
+                        Signal Processing:
+                        Image Communication
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2022
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        A neural network based framework
+                        for effective laparoscopic video
+                        quality assessment
+                    </div>
+
+                    <div class="publication-authors">
+                        Z. A. Khan, A. Beghdadi,
+                        M. Kaaniche, F. Alaya Cheikh,
+                        O. Gharbi
+                    </div>
+
+                    <div class="publication-venue">
+                        Computerized Medical Imaging
+                        and Graphics
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2019
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        A new video quality assessment
+                        dataset for video surveillance
+                        applications
+                    </div>
+
+                    <div class="publication-authors">
+                        A. Beghdadi, M-A. Qureshi,
+                        B. Dakkar, H. H. Gillani,
+                        Z. A. Khan, M. Kaaniche,
+                        M. Ullah, F. Alaya Cheikh
+                    </div>
+
+                    <div class="publication-venue">
+                        IEEE International Conference
+                        on Image Processing
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2017
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        Efficient enhancement of stereo
+                        endoscopic images based on joint
+                        wavelet decomposition and binocular
+                        combination
+                    </div>
+
+                    <div class="publication-authors">
+                        B. Sdiri, M. Kaaniche,
+                        F. Alaya Cheikh,
+                        A. Beghdadi, J. O. Elle
+                    </div>
+
+                    <div class="publication-venue">
+                        IEEE Transactions on Medical Imaging
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    —
+                </div>
+
+                <div>
+
+                    <div class="publication-title">
+                        Towards the design of a consistent
+                        image contrast enhancement
+                        evaluation measure
+                    </div>
+
+                    <div class="publication-authors">
+                        M. A. Qureshi,
+                        A. Beghdadi,
+                        M. Deriche
+                    </div>
+
+                    <div class="publication-venue">
+                        Signal Processing:
+                        Image Communication
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div style="margin-top: 35px;">
+
+            <a
+                href="https://scholar.google.com/"
+                target="_blank"
+                rel="noopener"
+                class="button"
+            >
+                Full publication list on Google Scholar →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     DATASETS
+================================================================ -->
+
+<section
+    id="datasets"
+    class="content-section"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            Open Datasets &amp; Resources
+        </div>
+
+
+        <h2>
+            Community Benchmarks
+        </h2>
+
+
+        <p class="lead">
+
+            Research datasets developed for perceptual
+            image/video quality and robust computer-vision
+            evaluation, including databases used in
+            international benchmarking activities.
+
+        </p>
+
+
+        <div class="cards">
+
+
+            <article class="card">
+
+                <div class="dataset-year">
+                    2023
+                </div>
+
+                <div class="dataset-acronym">
+                    CD-COCO
+                </div>
+
+                <div class="dataset-name">
+                    Complex Distorted COCO
+                </div>
+
+                <p>
+                    Scene-aware extension of MS-COCO
+                    containing realistic local and global
+                    visual degradations related to image
+                    context, depth and object semantics.
+                </p>
+
+                <a
+                    class="dataset-link"
+                    href="#"
+                >
+                    Access dataset →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="dataset-year">
+                    2022
+                </div>
+
+                <div class="dataset-acronym">
+                    VSQuAD
+                </div>
+
+                <div class="dataset-name">
+                    Video Surveillance Quality
+                    Assessment Dataset
+                </div>
+
+                <p>
+                    Surveillance-video benchmark including
+                    individual and combined distortions
+                    acquired across numerous indoor and
+                    outdoor environments.
+                </p>
+
+                <a
+                    class="dataset-link"
+                    href="#"
+                >
+                    Access dataset →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="dataset-year">
+                    2023
+                </div>
+
+                <div class="dataset-acronym">
+                    QVCED
+                </div>
+
+                <div class="dataset-name">
+                    Quality-Oriented Database for
+                    Video Capsule Endoscopy
+                </div>
+
+                <p>
+                    Endoscopic image-quality database with
+                    clinically relevant degradations such as
+                    blur, noise and non-uniform illumination.
+                </p>
+
+                <a
+                    class="dataset-link"
+                    href="#"
+                >
+                    Access dataset →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="dataset-year">
+                    2018
+                </div>
+
+                <div class="dataset-acronym">
+                    LVQ
+                </div>
+
+                <div class="dataset-name">
+                    Laparoscopic Video Quality Database
+                </div>
+
+                <p>
+                    Laparoscopic reference and degraded
+                    videos evaluated by medical and
+                    non-medical observers for perceptual
+                    quality studies.
+                </p>
+
+                <a
+                    class="dataset-link"
+                    href="#"
+                >
+                    Access dataset →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="dataset-year">
+                    2017
+                </div>
+
+                <div class="dataset-acronym">
+                    CEED2016
+                </div>
+
+                <div class="dataset-name">
+                    Contrast Enhancement Evaluation Database
+                </div>
+
+                <p>
+                    Curated image database designed to
+                    evaluate and compare contrast enhancement
+                    algorithms using perceptually oriented
+                    criteria.
+                </p>
+
+                <a
+                    class="dataset-link"
+                    href="#"
+                >
+                    Access dataset →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     NEWS
+================================================================ -->
+
+<section
+    id="news"
+    class="content-section soft"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            News &amp; Highlights
+        </div>
+
+
+        <h2>
+            Recent Activity
+        </h2>
+
+
+        <div class="news-list">
+
+
+            <article class="news">
+
+                <div class="news-date">
+                    Oct. 2025
+                </div>
+
+                <div>
+
+                    <h3>
+                        EUVIP 2025 — Valletta, Malta
+                    </h3>
+
+                    <p>
+                        The 13th European Workshop on Visual
+                        Information Processing took place
+                        in Valletta, bringing together
+                        researchers working on visual
+                        information processing, applications
+                        and performance assessment.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news">
+
+                <div class="news-date">
+                    2024
+                </div>
+
+                <div>
+
+                    <h3>
+                        Senior Associate Editor —
+                        IEEE Transactions on Image Processing
+                    </h3>
+
+                    <p>
+                        Appointment as Senior Associate Editor
+                        of IEEE Transactions on Image
+                        Processing.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news">
+
+                <div class="news-date">
+                    2024
+                </div>
+
+                <div>
+
+                    <h3>
+                        EUVIP 2024
+                    </h3>
+
+                    <p>
+                        EUVIP 2024 included a strong focus
+                        on artificial intelligence for
+                        medicine and healthcare and welcomed
+                        an international research community.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news">
+
+                <div class="news-date">
+                    Oct. 2023
+                </div>
+
+                <div>
+
+                    <h3>
+                        ICIP 2023 Challenge —
+                        Kuala Lumpur
+                    </h3>
+
+                    <p>
+                        Organisation of a challenge addressing
+                        object detection under uncontrolled
+                        acquisition conditions and
+                        scene-context constraints, associated
+                        with the CD-COCO benchmark.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     ACADEMIC SERVICE
+================================================================ -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="section-label">
+            Academic Service
+        </div>
+
+
+        <h2>
+            Editorial &amp; Community Roles
+        </h2>
+
+
+        <ul class="service-list">
+
+            <li>
+                <strong>
+                    Senior Associate Editor
+                </strong>
+                —
+                IEEE Transactions on Image Processing
+                (from 2024)
+            </li>
+
+            <li>
+                <strong>
+                    Associate Editor
+                </strong>
+                —
+                IEEE Transactions on Multimedia
+                (2022–2025)
+            </li>
+
+            <li>
+                <strong>
+                    Associate Editor
+                </strong>
+                —
+                Signal Processing:
+                Image Communication, Elsevier
+                (2014–2024)
+            </li>
+
+            <li>
+                <strong>
+                    Associate Editor
+                </strong>
+                —
+                EURASIP Journal on Image and
+                Video Processing
+            </li>
+
+            <li>
+                <strong>
+                    Editorial Board
+                </strong>
+                —
+                Journal of Electronic Imaging,
+                SPIE
+                (2018–2020)
+            </li>
+
+            <li>
+                <strong>
+                    Founder &amp; Steering Committee Chair
+                </strong>
+                —
+                European Workshop on Visual
+                Information Processing (EUVIP)
+            </li>
+
+            <li>
+                <strong>
+                    Elected Member
+                </strong>
+                —
+                IEEE Multimedia Signal Processing
+                Technical Committee
+                (from 2022)
+            </li>
+
+            <li>
+                <strong>
+                    Elected Member
+                </strong>
+                —
+                EURASIP Visual Information Processing
+                Technical Area Committee
+                (2021–2023)
+            </li>
+
+            <li>
+                Senior Member IEEE ·
+                EURASIP Member ·
+                IEEE-MMTC Member
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================================
+     CONTACT
+================================================================ -->
+
+<section
+    id="contact"
+    class="content-section soft"
+>
+
+    <div class="container">
+
+        <div class="section-label">
+            Contact
+        </div>
+
+
+        <h2>
+            Get in Touch
+        </h2>
+
+
+        <p class="lead">
+
+            Contact information for scientific
+            collaborations, academic exchanges,
+            invited talks and student supervision.
+
+        </p>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-item">
+
+                <div class="contact-label">
+                    Email
+                </div>
+
+                <div class="contact-value">
+
+                    <a
+                        href="mailto:beghdadi@sorbonne-paris-nord.fr"
+                    >
+                        beghdadi@sorbonne-paris-nord.fr
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-label">
+                    Phone
+                </div>
+
+                <div class="contact-value">
+
+                    <a href="tel:+33149404057">
+                        +33 (0)1 49 40 40 57
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-label">
+                    Address
+                </div>
+
+                <div class="contact-value">
+
+                    L2TI — Institut Galilée<br>
+
+                    Sorbonne Paris Nord<br>
+
+                    99 avenue J.-B. Clément<br>
+
+                    93430 Villetaneuse, France
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-label">
+                    Office Hours
+                </div>
+
+                <div class="contact-value">
+                    By appointment
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <div class="footer-name">
+                    Prof. Azeddine Beghdadi
+                </div>
+
+                <div>
+                    L2TI — Institut Galilée —
+                    Sorbonne Paris Nord
+                </div>
+
+                <div>
+                    Villetaneuse, France
+                </div>
+
+            </div>
+
+
+            <div>
+
+                Senior Member IEEE
+                &nbsp;·&nbsp;
+                EURASIP Member
+                &nbsp;·&nbsp;
+                IEEE-MMSP TC
+
+                <br><br>
+
+                © <span id="year"></span>
+                Azeddine Beghdadi
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
+
+<script>
+
+    /*
+     ===============================================================
+     DARK MODE
+     ===============================================================
+    */
+
+    const themeButton =
+        document.getElementById("themeButton");
+
+
+    const savedTheme =
+        localStorage.getItem("theme");
+
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark");
+
+        themeButton.textContent = "☀";
+
+    }
+
+
+    themeButton.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.toggle("dark");
+
+
+            if (
+                document.body.classList.contains("dark")
+            ) {
+
+                themeButton.textContent = "☀";
+
+                localStorage.setItem(
+                    "theme",
+                    "dark"
+                );
+
+            }
+
+            else {
+
+                themeButton.textContent = "☾";
+
+                localStorage.setItem(
+                    "theme",
+                    "light"
+                );
+
+            }
+
+        }
+    );
+
+
+
+    /*
+     ===============================================================
+     CURRENT YEAR
+     ===============================================================
+    */
+
+    document
+        .getElementById("year")
+        .textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
